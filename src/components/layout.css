@@ -31,17 +31,13 @@ body {
   margin: 1rem auto !important;
   border-radius: 5px;
   height: auto !important;
-
 }
 
 .prose a {
   color: #EC4899;
 }
 
-section img {
-  width: auto;
-  height: 200px !important;
-}
+
 
 nav {
   height: 72px;

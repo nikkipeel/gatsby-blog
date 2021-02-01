@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => (
                    <Link to={post.node.frontmatter.path}>
     
                    <div className="block relative leading-snug" key={ post.node.id }>
-                   <Img fluid={post.node.frontmatter.image.childImageSharp.fluid} alt=""  className="block w-full items-center object-cover object-top absolute" imgStyle={{ height: 200, alignItems: 'center', position: 'absolute', display: 'block', objectFit: 'cover', objectPosition: 'top'}}/> 
+                   <Img fluid={post.node.frontmatter.image.childImageSharp.fluid} alt=""  className="block w-full items-center object-cover object-top absolute" imgStyle={{ height: 250, alignItems: 'center', position: 'absolute', display: 'block', objectFit: 'cover', objectPosition: 'top'}}/> 
                        <span className="block relative ">
                            <h3 className="text-white text-xl font-semibold rounded text-left">{post.node.frontmatter.title}</h3>
                        </span>
