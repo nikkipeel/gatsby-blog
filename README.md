@@ -1,5 +1,5 @@
 
-<h1>Markdown Blog w/Gatsby <img src="src/images/gatsby-icon.png" width="40px" height="auto" /></h1>
+<h1>Markdown Blog w/Gatsby <img src="src/images/gatsby-icon.png" width="24px" height="auto" /></h1>
 
 *Technical blog built with Markdown and GatsbyJS*
   - Blog posts created with markdown files
@@ -16,8 +16,11 @@
 <h2>- Single Post Page -</h2>
     <img src="src/images/singlepost.png" alt="Single blog post" width="100%" height="auto">
 
-<h2>- Resources Page -</h2>
+<h2>- Projects  -</h2>
+  <img src="src/images/projectspage.png" alt="Projects Page" width="100%" height="auto">
+
+<h2>- Resources -</h2>
   <img src="src/images/toolspage.png" alt="Post Page" width="100%" height="auto">
 
 <h2>- Fixed Bottom Navigation for small screens -</h2>
-  <img src="src/images/mobilenav-final.png" alt="Post Page" width="100%" height="auto">
+  <img src="src/images/mobilenav-final.png" alt="Mobile navigation" width="60%" height="auto">
