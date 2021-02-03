@@ -1,19 +1,23 @@
 
-<h1>Gatsby Blog <img src="src/images/gatsby-icon.png" width="40px" height="auto" /></h1>
+<h1>Markdown Blog w/Gatsby <img src="src/images/gatsby-icon.png" width="40px" height="auto" /></h1>
 
-*Very simple blog built with GatsbyJS*
+*Technical blog built with Markdown and GatsbyJS*
   - Blog posts created with markdown files
-  - Post pages displayed using GraphQL queries
-
-Features to add:
-  - Style using TailwindCSS
-  - Add in Sanity CMS
+  - Post pages and frontmatter displayed using GraphQL queries
+  - Image optimization with gatsby-image
 
 <h2>- Home Page -</h2>
-  <img src="src/images/gatsby-blog-home.png" alt="Home Page" width="100%" height="auto">
+  <img src="src/images/homepage-top.png" alt="Home Page top" width="100%" height="auto">
+  <img src="src/images/homepage-bottom.png" alt="Home Page bottom" width="100%" height="auto">
 
 <h2>- Blog Page -</h2>
-  <img src="src/images/gatsby-blogpage.png" alt="Blog Page" width="100%" height="auto">
+  <img src="src/images/blogpage.png" alt="Blog Page" width="100%" height="auto">
 
 <h2>- Single Post Page -</h2>
-  <img src="src/images/gatsby-postpage.png" alt="Post Page" width="100%" height="auto">
+    <img src="src/images/singlepost.png" alt="Single blog post" width="100%" height="auto">
+
+<h2>- Resources Page -</h2>
+  <img src="src/images/toolspage.png" alt="Post Page" width="100%" height="auto">
+
+<h2>- Fixed Bottom Navigation for small screens -</h2>
+  <img src="src/images/mobilenav-final.png" alt="Post Page" width="100%" height="auto">
