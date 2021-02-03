@@ -9,12 +9,12 @@ export default function ToolsPage() {
         <SEO title="Tools" />
         <main className="flex flex-col bg-brown text-white min-h-screen p-12">
             <section className="w-full md:w-3/4 mx-auto text-base">
-                <h1 className="text-4xl mono">Helpful Tools</h1>
-                <h2 className="text-lg mb-4">Welcome to my resources page!</h2>
-                <p className="text-base mb-12">I've come across a lot of great resources since I began learning web development. In addition to the following books, courses, and programs, I also try to stay current by reading new articles about daily (<a href="https://css-tricks.com/" className="text-pink hover:underline focus:underline">CSS-Tricks</a> is an awesome blog to follow). You can find a lot guides and articles on websites like <a href="https://medium.com/" className="text-pink hover:underline focus:underline">Medium</a> or <a href="https://dev.to" className="text-pink hover:underline focus:underline">Dev.to</a> as well. If you're in need of productivity tools, I'd highly suggest both <a href="https://asana.com/" className="text-pink hover:underline focus:underline">Asana</a> (project management, collaboration) and <a href="https://www.boostedproductivity.com/" className="text-pink hover:underline">Boosted</a> (time-tracking). </p>
+                <h1 className="text-4xl tracking-tight mono mb-4">Helpful Tools</h1>
+
+                <p className="text-base mb-12 lg:w-2/3">I've come across a lot of great resources since I began learning web development. In addition to the following books, courses, and programs, I also try to stay current by reading new articles about daily (<a href="https://css-tricks.com/" className="text-pink hover:underline focus:underline">CSS-Tricks</a> is an awesome blog to follow). You can find a lot guides and articles on websites like <a href="https://medium.com/" className="text-pink hover:underline focus:underline">Medium</a> or <a href="https://dev.to" className="text-pink hover:underline focus:underline">Dev.to</a> as well. If you're in need of productivity tools, I'd highly suggest both <a href="https://asana.com/" className="text-pink hover:underline focus:underline">Asana</a> (project management, collaboration) and <a href="https://www.boostedproductivity.com/" className="text-pink hover:underline">Boosted</a> (time-tracking). </p>
 
                 <ul className="my-4 list-none">
-                    <h2 className="text-3xl mb-4 border-b-2 border-yellow w-48 leading-loose rounded-sm">Books</h2>
+                    <h2 className="wavy text-3xl mb-4 w-48 leading-loose rounded-sm">Books</h2>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">   
                         <li className="text-base">
                             <img src="https://i.imgur.com/22jWNql.png" alt="" className="relative items-center lg:float-left rounded mx-auto mb-4 lg:mb-0 lg:mr-4"/> 
@@ -39,7 +39,7 @@ export default function ToolsPage() {
                 </ul>
 
                 <ul className="my-4">
-                    <h2 className="text-3xl mb-4 border-b-2 border-yellow w-48 leading-loose rounded-sm">Top Courses</h2>
+                    <h2 className="wavy text-3xl mb-4 w-48 leading-loose rounded-sm">Top Courses</h2>
                     <li className="my-8">
                         <a href="https://www.udemy.com/course/web-projects-with-vanilla-javascript/" className="text-lg font-bold leading-loose my-4 hover:text-pink hover:underline cursor-pointer">20 Projects with Vanilla Javascript - Udemy, Instructor: Brad Traversy </a>
                         <p className="text-base">Build real projects with vanilla JS such as a video player, lyrics search application, flippable flash cards, expense tracker, infinite scroll posts and more. </p>   
@@ -59,7 +59,7 @@ export default function ToolsPage() {
                 </ul>
 
                 <ul className="my-4">
-                    <h2 className="text-3xl mb-4 border-b-2 border-yellow w-64 md:w-80 leading-loose rounded-sm">Learning Platforms</h2>
+                    <h2 className="wavy text-3xl mb-4 w-64 md:w-80 leading-loose rounded-sm">Learning Platforms</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start">
                     <li className="flex flex-col pb-2">
                         <a href="https://scrimba.com/" className="text-lg font-bold hover:text-pink hover:underline cursor-pointer">  Scrimba</a>

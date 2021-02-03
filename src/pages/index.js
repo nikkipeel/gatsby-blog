@@ -17,14 +17,14 @@ return  (
                     <img src={selfie} className="w-60 h-60 mx-auto lg:mr-12" alt="portrait" id="home-img"/>
                     <div className="text-base flex flex-col justify-center">
                         <h1 className="mono text-xl my-8 lg:mt-0">Hi there, I'm Nikki!</h1>
-                        <p className="mt-4 mb-8 text-white">I'm a Front End Developer working from home in the United States. I love making websites and thought I'd create this blog to share some of my projects and favorite web development tools with you. Feel feel to browse my recent posts and projects or find something new in the resources section 😎</p>
+                        <p className="mt-4 mb-8 text-white">I'm a Front End Developer working from home in the United States. I love making websites and thought I'd create this blog to share some of my projects and favorite web development tools with you. Feel feel to browse my recent posts and projects or find something new in the resources section <span role="img" aria-label="smiling emoji">😎</span></p>
                         <a href="/rss.xml"><button className="w-48 h-12 font-semibold bg-yellow hover:bg-brown text-brown hover:text-yellow border-4 border-brown hover:border-yellow cursor-pointer rounded"> Subscribe with RSS</button></a>
                     </div>
                 </section>
             </div>
 
             <div className="flex flex-col justify-center mx-auto mt-24 mb-24"> 
-                <h2 className="text-3xl mono border-b-2 border-yellow w-1/2 mx-8 leading-loose">Recent Posts</h2>
+                <h2 className="wavy text-3xl mono w-1/2 mx-8 leading-loose">Recent Posts</h2>
                
                       <>
                       {data.allMarkdownRemark.edges.map(post => (
@@ -38,7 +38,7 @@ return  (
                                 <h3 className="text-white text-2xl font-semibold mb-2">{ post.node.frontmatter.title }</h3>
                                 <p className="text-base mb-4">{post.node.frontmatter.description}</p>
                                 <span id={ post.node.frontmatter.category } className="text-black font-semibold text-sm py-2 px-4 mr-2 rounded">{ post.node.frontmatter.category }</span>
-                                <small className="text-base ml-2">&#128197; {post.node.frontmatter.date }</small>
+                                <small className="text-base ml-2"><span role="img" aria-label="calendar"> &#128197; </span>{post.node.frontmatter.date }</small>
                             </div>
                         </span>
                        

@@ -28,7 +28,6 @@ const Layout = ({ children }) => {
     }
   `)
 
-  {/*const build = document.lastModified; */}
 
   return (
     <>

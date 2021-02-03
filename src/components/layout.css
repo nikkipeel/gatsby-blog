@@ -37,7 +37,10 @@ body {
   color: #EC4899;
 }
 
-
+section img {
+  width: auto;
+  height: 200px;
+}
 
 nav {
   height: 72px;
@@ -160,3 +163,10 @@ main button {
   
 }
 
+.wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  text-decoration-color:#FFB847;
+}
