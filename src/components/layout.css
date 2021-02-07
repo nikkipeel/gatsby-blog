@@ -37,9 +37,19 @@ body {
   color: #EC4899;
 }
 
+.prose a:hover {
+  text-decoration: underline;
+  filter: brightness(115%);
+}
+
 section img {
   width: auto;
   height: 200px;
+}
+
+.prose h3 {
+  text-decoration: underline wavy #ffb847 2px;
+  text-underline-offset: 8px;
 }
 
 nav {
@@ -97,6 +107,10 @@ h3 {
 ul {
   list-style: inside;
   margin: 1rem;
+}
+
+li {
+  line-height: 2;
 }
 
 main button {
