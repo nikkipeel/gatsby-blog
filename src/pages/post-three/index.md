@@ -2,7 +2,7 @@
 path: "/styling-with-text-decoration"
 date: "2021-02-07"
 title: "Styling with text-decoration"
-description: ""
+description: "How to use 'text-decoration' to emphasize text on your website"
 category: "CSS"
 author: "Nikki Peel"
 authorImage: ../../images/selfie.png
