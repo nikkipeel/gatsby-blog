@@ -23,7 +23,7 @@ Three boxes containing overflowing text content will all be scrollable but style
 
 First, create three `<section>` elements and within those sections create a paragraph containing a long string of text (I used 4 paragraphs of dummy text, enough to create overflow). I also chose to label each `<section>` with an `<h1>`:
 
-```
+```html
 <section>
   <h1>Hidden</h1>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, quod fugiat natus exercitationem totam eveniet sint. Officiis itaque minima unde facilis at aut nostrum, veniam amet natus perspiciatis laboriosam exercitationem adipisci laudantium nihil voluptatem assumenda animi, fugit est harum officia! Quas quae expedita nemo, qui fuga unde error commodi harum deserunt aut incidunt esse sed laudantium veritatis earum nobis, quisquam at optio perferendis. Sed, consectetur. Enim deserunt tempore sunt? Laudantium rerum dignissimos sunt animi molestias maiores reprehenderit esse quas laboriosam?
@@ -74,7 +74,7 @@ First, create three `<section>` elements and within those sections create a para
 
 Next, you'll want to create some basic styling:
 
-```
+```css
 :root {
   --white: #f8f5f2;
   --teal: #00E8F0;
@@ -112,7 +112,7 @@ p {
 
 I decided to use custom properties for the colors in this project and declared them first at the top of the file (this is optional of course). Next, we'll use Flexbox to style the `<body>` using display: flex and space the sections evenly using `justify-content: space-evenly`. I also added margin to the `<body>` so that the sections would be centered horizontally with a bit of space on top and bottom as well: `margin: 2rem auto`
 
-```
+```css
 body {
   display: flex;
   justify-content: space-evenly;
@@ -126,7 +126,7 @@ body {
 
 The sections each have a `height` of 60vh with a `border-radius` of 5px for rounded corners. I added some padding to the `<section>` as well so that there is a nice amount of whitespace. You want to make sure you declare `overflow-y: auto` when styling your sections so that they are scrollable:
 
-```
+```css
 section {
   display: block;
   background-color: var(--white);
@@ -141,7 +141,7 @@ section {
 
 The only styling I chose for the paragraph elements was a line-height of 1.35 and changing the font-family to sans-serif:
 
-```
+```css
 p {
   line-height: 1.35;
   font-family: sans-serif;
@@ -154,7 +154,7 @@ Now it's time for the fun part! In order to select the scrollbar, we'll use the 
 
 >*Note: if you plan to use a horizontal scroll bar instead (or in addition to) you'll need to declare a `height` for the scrollbar*
 
-```
+```css
 section::-webkit-scrollbar {
 width: 1.25em;
 }
@@ -162,7 +162,7 @@ width: 1.25em;
 
 Next, we can style the 'track' of the scrollbar using `::-webkit-scrollbar-track`:
 
-```
+```css
 section::-webkit-scrollbar-track {
   border-radius: 1.5px;
   background-color: var(--teal);
@@ -174,7 +174,7 @@ I added a small `border-radius` because the `<section>` container has rounded co
 
 Now that the `sidebar` and `sidebar-track` have been made we can add custom styling to the `sidebar-thumb` (this is the element that moves along the track):
 
-```
+```css
 section::-webkit-scrollbar-thumb  {
   height: 50px;
   border-radius: 10px;
@@ -188,7 +188,7 @@ Once again, we've added `border-radius` for rounded corners and an inner-shadow 
 
 Remember, we want to hide the scrollbar on the first `<section>` while still maintaining scroll. To do this, simply target the element by its ID (`#hidden`) and write `display: none;`
 
-```
+```css
 #hidden::-webkit-scrollbar {  
   display: none;
 }
@@ -198,7 +198,7 @@ Remember, we want to hide the scrollbar on the first `<section>` while still mai
 
 Styling the third `<section>` was a bit trickier. We don't want the scrollbar to show unless the section has been focused upon. First, you must target the element by its ID (`#inactive`) and hide the overflowing content (this also hides the scrollbar!):
 
-```
+```css
 #inactive {
   overflow: hidden;
 }
@@ -206,7 +206,7 @@ Styling the third `<section>` was a bit trickier. We don't want the scrollbar to
 
 Next, target the element's `:focus` state and change the overflow of the y axis to `auto`:
 
-```
+```css
 #inactive:focus {
   overflow-y: auto;
 }
@@ -218,7 +218,7 @@ If you click or tap on the third section, you should now see our custom scrollba
 
 These next few steps are implemented so that the sections can be focused upon by keyboard users as well. The `<section>` element is not tabbable by default as is the case with input elements, buttons, and anchor tags. In order to fix this, I added a `tabindex` to each of the sections within the HTML:
 
-```
+```css
 <section id="hidden" tabindex="1"></section>
 <section tabindex="2"></section>
 <section id="inactive" tabindex="3"></section>
@@ -226,7 +226,7 @@ These next few steps are implemented so that the sections can be focused upon by
 
 Next, custom styling can be used to indicate more clearly whether an element has been focused upon. For this project, I applied `transition` and `:focus` styles globally:
 
-```
+```css
 * {
     transition: all .3s ease;
 }
@@ -240,13 +240,13 @@ Next, custom styling can be used to indicate more clearly whether an element has
 
 You may also wish to add a short note as I have to the third `<section>` indicating that the user must tap to view the content:
 
-```
+```css
 <em>* tap to focus on small screens</em>
 ```
 
 In our CSS file, we can hide this element on large screens using a media query:
 
-```
+```css
 em {
   display: block;
 }
@@ -260,7 +260,7 @@ em {
 
 Next, we should add another media query so that our content collapses when viewed on small screens:
 
-```
+```css
 @media screen and (max-width: 768px) {
   body {
     display: flex;
@@ -277,7 +277,7 @@ First, we update our `<body>` element to use `flex-direction: column`. Next, adj
 
 ###**Final HTML:**
 
-```
+```html
 <section id="hidden" tabindex="1">
   <h1>Hidden</h1>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, quod fugiat natus exercitationem totam eveniet sint. Officiis itaque minima unde facilis at aut nostrum, veniam amet natus perspiciatis laboriosam exercitationem adipisci laudantium nihil voluptatem assumenda animi, fugit est harum officia! Quas quae expedita nemo, qui fuga unde error commodi harum deserunt aut incidunt esse sed laudantium veritatis earum nobis, quisquam at optio perferendis. Sed, consectetur. Enim deserunt tempore sunt? Laudantium rerum dignissimos sunt animi molestias maiores reprehenderit esse quas laboriosam?
@@ -327,7 +327,7 @@ First, we update our `<body>` element to use `flex-direction: column`. Next, adj
 
 ###**Final CSS:**
 
-```
+```css
 :root {
   --white: #f8f5f2;
   --teal: #00E8F0;

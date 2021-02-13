@@ -30,7 +30,7 @@ Or with multiple properties on the same line: `text-decoration: underline solid 
 
 Here is the styling I used on this website to style headings within blog posts:
 
-```
+```css
     .prose h3 {
         text-decoration: underline wavy #ffb847 2px;
         text-underline-offset: 8px;
