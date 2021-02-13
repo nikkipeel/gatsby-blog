@@ -70,7 +70,7 @@ This is what my Post schema looks like:
 
 In order for the code blocks to render, I had to add these lines of code to the `SinglePost.js` page within my `components/` folder:
 
-```
+```jsx
 const serializers = {
   types: {
     code: props => (
@@ -83,7 +83,7 @@ const serializers = {
 ```
 And then add the serializers within the content's container div:
 
-```
+```jsx
 <div className="break-words px-4 lg:px-16 py-12 lg:py-20 prose lg:prose-xl max-w-screen leading-normal">
   <BlockContent blocks={singlePost.body} projectId="0dzyqy4p" dataset="production" serializers={serializers}/> 
 </div>
@@ -106,7 +106,7 @@ Next, we need to connect our React app to the Sanity project. First, navigate in
 
 Once that's finished, navigate to your project's `src/` folder and create a new file name 'client.js' (this is where we'll import the package we just installed). Navigate into that file and insert the following code:
 
-```
+```jsx
 import sanityClient from "@sanity/client"; 
 
 export default sanityClient({ 
@@ -150,7 +150,7 @@ For each of your pages that will be using data from Sanity, be sure to import yo
 
 With Sanity, you can use either GROQ or GraphQL for your querying language. Since this was my first project with Sanity and the tutorial used GROQ, I decided to go with that for starting out. Within 'useEffect', we're fetching the title, slug, description, featured image, and category for each post:
 
-```
+```jsx
 useEffect(() => {
         sanityClient
             .fetch(
@@ -175,7 +175,7 @@ useEffect(() => {
 
 Next, you can map over the blog posts within the return statement to display post's data like so:
 
-```
+```jsx
 {postData && postData.map((post, index) => (
                     <article>
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
@@ -208,7 +208,7 @@ For single posts, our GROQ query looks like this:
 
 ![single post file](../../images/postjs(2).png)
 
-```
+```jsx
 useEffect(() => {
         sanityClient.fetch(`
             *[slug.current == "${slug}"]{
@@ -233,7 +233,7 @@ useEffect(() => {
 
 *SinglePost.js* -
 
-```
+```jsx
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
@@ -336,7 +336,7 @@ I love using Tailwind and prefer to write my styles inline with utility classes,
 
 After installing craco, replace react-scripts in your package.json with craco:
 
-```
+```json
 {
     "scripts": {
      "start": "craco start",
@@ -349,7 +349,7 @@ After installing craco, replace react-scripts in your package.json with craco:
 
 Next, create a file called `craco.config.js` and require *autoprefixer* and *tailwind*:
 
-```
+```js
 module.exports = {
   style: {
     postcss: {
@@ -372,7 +372,7 @@ I won't get into the details of using Tailwind in this post, but I'd highly sugg
 
 *SinglePost.js* →
 
-```
+```jsx
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
@@ -457,7 +457,7 @@ export default function SinglePost() {
 
 *Post.js* →
 
-```
+```jsx
     import React, { useState, useEffect } from 'react';
     import { Link } from 'react-router-dom';
     import sanityClient from "../client.js";
