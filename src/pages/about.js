@@ -13,6 +13,7 @@ const AboutPage = ()  => (
                             <span>Nikki</span>
                         </h1>
                         <div className="prose lg:prose-xl text-base">
+                            
                         I'm a Front End Developer seeking remote work opportunities in web development. I create responsive, accessible websites with React, HTML, CSS, Javascript, and a variety of frameworks including Bootstrap, Tailwind, and Materialize. In my free time, I enjoy spending time outdoors with my family and learning new skills.                        </div>
                     </div>
                 </section>
