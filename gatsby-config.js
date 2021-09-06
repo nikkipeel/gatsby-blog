@@ -111,8 +111,8 @@ module.exports = {
         name: `Nikki Peel - Blog`,
         short_name: `blog`,
         start_url: `/`,
-        background_color: `#EC4899`,
-        theme_color: `#341611`,
+        background_color: `#69124A`,
+        theme_color: `#69124A`,
         display: `minimal-ui`,
         icon: `src/images/blog-logo.png`, // This path is relative to the root of the site.
       },

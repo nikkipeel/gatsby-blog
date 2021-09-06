@@ -11,16 +11,16 @@ export default function Template({ data }) {
 
     return (
         <Layout>
-              <main className="container bg-brown min-h-screen p-4 md:p-12">
+              <main className="container bg-darkBlue min-h-screen p-4 md:p-12">
             <Link to="/blog" exact className="text-white text-base items-center"><FontAwesomeIcon icon={faChevronLeft} className="mr-4"></FontAwesomeIcon> Back to Blog</Link>
             <article className="container text-white mx-auto justify-center rounded-lg mt-4">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-8 z-40">
-                        <div className="bg-white text-brown bg-opacity-75 rounded p-4 md:p-12">
+                        <div className="bg-white text-darkBlue bg-opacity-75 rounded p-4 md:p-12">
                             <h1 className="mono text-3xl mb-4">
                                 {post.frontmatter.title}
                             </h1>
-                            <div className="flex justify-center text-brown">
+                            <div className="flex justify-center text-darkBlue">
                                 <Img fixed={post.frontmatter.authorImage.childImageSharp.fixed} alt="" className="w-10 h-10 rounded-full" />
                                 <p className="mono flex items-center pl-4 text-xl">{post.frontmatter.author}</p>
                             </div>

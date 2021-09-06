@@ -24,7 +24,7 @@ const BlogPage = ({ data }) => (
                        </span>
                       <div className="mt-4 mb-8"> 
                            <p className="text-base mb-4">{post.node.frontmatter.description}</p>
-                           <span id={post.node.frontmatter.category} className="text-black font-semibold text-sm py-2 px-4 mr-2 rounded">{post.node.frontmatter.category}</span>
+                           <span id={post.node.frontmatter.category} className="category text-white font-semibold text-sm py-2 px-4 mr-2 rounded">{post.node.frontmatter.category}</span>
                            <small className="text-base ml-2"><span role="img" aria-label="calendar">&#128197; </span>{post.node.frontmatter.date}</small>
                        </div> 
                    </div>
