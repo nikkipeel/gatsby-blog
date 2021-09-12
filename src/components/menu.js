@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faQuoteRight, faUser, faTools, faFolder } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faQuoteRight, faUser, faTools } from '@fortawesome/free-solid-svg-icons';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Menu() {

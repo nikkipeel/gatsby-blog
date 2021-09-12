@@ -446,7 +446,6 @@ export default function SinglePost() {
                 </header>
                 <div className="break-words px-4 lg:px-16 py-12 lg:py-20 prose lg:prose-xl max-w-screen leading-normal">
                     <BlockContent blocks={singlePost.body} projectId="0dzyqy4p" dataset="production" serializers={serializers}/> 
-                    {/*<ReactMarkdown markdown={singlePost.body} projectId="0dzyqy4p" dataset="production"/> */}
                 </div>
             </article>
         </main>

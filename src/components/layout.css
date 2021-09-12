@@ -38,7 +38,7 @@ a {
   ;
   margin: 1rem auto !important;
   border-radius: 5px;
-  height: auto !important;
+  height: 100% !important;
 }
 
 .prose a {
@@ -86,7 +86,7 @@ pre code{
   overflow-x: auto;
   line-height: 1.5;
   max-width: 70vw;
-  min-width: 300px;
+  min-width: 320px;
 } 
 
 pre code::-webkit-scrollbar {
@@ -183,7 +183,7 @@ main button {
   margin: 0;
   padding: 0;
   overflow: initial;
-  float: left; /* 1 */
+  //float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
 
@@ -307,8 +307,4 @@ main button {
   footer {
     background-color: transparent;
   }
-}
-
-.gatsby-resp-image-wrapper img {
-  display: none;
 }
