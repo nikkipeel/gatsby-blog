@@ -18,7 +18,7 @@ return  (
                     <div className="text-base flex flex-col justify-center">
                         <h1 className="mono text-xl my-8 lg:mt-0">Hi there, I'm Nikki!</h1>
                         <p className="mt-4 mb-8 text-white">I'm a Front End Developer working from home in the United States. I love making websites and thought I'd create this blog to share some of my projects and favorite web development tools with you. Feel feel to browse my recent posts and projects or find something new in the resources section <span role="img" aria-label="smiling emoji">😎</span></p>
-                        <a href="/rss.xml" className="flex justify-center items-center w-48 h-12 font-semibold hover:bg-brightBlue text-white hover:text-white-active border-2 border-white cursor-pointer rounded sm:mx-auto lg:mx-0">Subscribe with RSS</a>
+                        <a style={{margin: '0 auto'}} href="/rss.xml" className="flex justify-center items-center w-48 h-12 font-semibold hover:bg-brightBlue text-white hover:text-white-active border-2 border-white cursor-pointer rounded sm:mx-auto lg:mx-0">Subscribe with RSS</a>
                     </div>
                 </section>
             </div>

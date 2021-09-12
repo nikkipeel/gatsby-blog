@@ -303,3 +303,12 @@ main button {
    color: green;
  }
 
+@media screen and (max-width: 468px) {
+  footer {
+    background-color: transparent;
+  }
+}
+
+.gatsby-resp-image-wrapper img {
+  display: none;
+}

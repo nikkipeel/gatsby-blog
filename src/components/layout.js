@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <>
       <Menu  siteTitle={data.site.siteMetadata?.title || `Title`}/>
         <main  id="top">{children}</main>
-        <footer className="bg-blue flex flex-col justify-center align-center text-center lg:my-0 lg:mt-8 my-8 mx-auto w-100 h-auto py-16 text-white">
+        <footer className="lg:bg-blue flex flex-col justify-center align-center text-center lg:my-0 lg:mt-8 my-8 mx-auto w-100 h-auto py-16 text-white">
              <div id="to-top" className="block">
                 <a href="#top" className="cursor-pointer hover:underline"><FontAwesomeIcon icon={ faChevronUp  }></FontAwesomeIcon><br/>Back To Top</a>
             </div>

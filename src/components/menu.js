@@ -6,8 +6,8 @@ import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
 
 function Menu() {
     return (
-        <header className="bg-maroon px-12">
-            <div className="container lg:flex lg:justify-between">
+        <header className="bg-maroon px-24">
+            <div className="lg:flex lg:justify-between">
             <nav className="lg:flex justify-center items-center">
             <Link to="/" exact activeClassName="border-b-4 border-white border-opacity-100 text-white-active" className="inline-flex items-center py-3 px-3 md:mr-6  text-white hover:text-white-active hover:scale-105 transform text-base font-bold mono tracking-widest">
             <FontAwesomeIcon icon={faHome} className="md:mr-4"></FontAwesomeIcon>  <p className="hidden md:block">Home</p>

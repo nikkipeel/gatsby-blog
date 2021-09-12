@@ -111,10 +111,10 @@ module.exports = {
         name: `Nikki Peel - Blog`,
         short_name: `blog`,
         start_url: `/`,
-        background_color: `#69124A`,
-        theme_color: `#69124A`,
+        background_color: `#14527C`,
+        theme_color: `#14527C`,
         display: `minimal-ui`,
-        icon: `src/images/blog-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
     `gatsby-plugin-feed`,
