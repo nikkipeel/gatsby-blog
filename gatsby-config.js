@@ -106,6 +106,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        // color: "#4a94a8",
+        color: "linear-gradient(to right, #69124A, #DB0F94)",
+        // Height of the scroll indicator
+        height: "12px",
+        // Configure paths where the scroll indicator will appear
+        paths: ["/**"],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Nikki Peel - Blog`,
